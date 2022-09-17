@@ -1,5 +1,7 @@
 NLW - eSports
 
-11 a 18/09/2022
-
-Dev: Tiago Berwanger
+Faltando:
+- validações no formulário
+- valicações no backend
+- carrossel na home
+- atualizar a home após requisição
