@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 
 import GameBanner from './components/GameBanner'
-import CreateAdModal from './components/createAdModal'
+import CreateAdModal from './components/CreateAdModal'
 
 import Header from './components/Header'
 
 import './styles/main.css'
-import { CreateAdBanner } from './components/CreateAdBanner'
 
 interface Game {
     id: string,
