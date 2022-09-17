@@ -17,6 +17,7 @@ function CreateAdModal() {
     const [games, setGames] = useState<Game[]>([])
     const [weekDays, setWeekDays] = useState<string[]>([])
     const [useVoiceChannel, setVoiceChannel] = useState(false)
+    const [open, setOpen] = useState<boolean | undefined>()
 
     useEffect(() => {
         fetch('http://localhost:3333/games')
@@ -42,12 +43,15 @@ function CreateAdModal() {
                 hourEnd: data.hourEnd,
                 useVoiceChannel: useVoiceChannel
             })
-        }).catch((e) => console.log('Error', e))
+
+        })
+            .then(() => setOpen(false))
+            .catch((e) => console.log('Error', e))
 
     }
 
     return (
-        <Dialog.Root>
+        <Dialog.Root open={open}>
 
             <div className="pt-1 bg-nlw-gradient self-stretch rounded-lg mt-8 overflow-hidden">
                 <CreateAdBanner />
