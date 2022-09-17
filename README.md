@@ -1,7 +1,15 @@
 NLW - eSports
 
-Faltando:
+Adicionais:
+
+FRONT:
+
 - validações no formulário
-- valicações no backend
 - carrossel na home
 - atualizar a home após requisição
+
+BACK: 
+- valicações no backend
+
+MOBILE:
+- add push notifications
